@@ -25,6 +25,7 @@ RUN apt-get -y update && \
 RUN pecl install xdebug-2.7.2 && \
     docker-php-ext-enable xdebug
 
+
 # Install redis
 RUN pecl install redis-4.0.1 && \
     docker-php-ext-enable redis
@@ -48,6 +49,9 @@ RUN apt-get -y update && \
     rm -rf /var/lib/apt/lists/* && \
     docker-php-ext-configure gd --with-freetype-dir=/usr/include/ --with-jpeg-dir=/usr/include/ && \
     docker-php-ext-install -j$(nproc) gd
+
+
+COPY xdebug.ini /usr/local/etc/php/conf.d/xdebug.ini
 
 # Enable apache modules
 RUN a2enmod rewrite headers
