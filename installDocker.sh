@@ -18,3 +18,6 @@ sudo apt-get -y install docker-compose
 
 # Test out docker
 sudo docker run hello-world
+
+# Run project
+sudo docker-compose up -d
