@@ -1,0 +1,241 @@
+@import url(http://weloveiconfonts.com/api/?family=fontawesome);
+
+body {
+  padding-left: 250px;
+  margin: 0;
+  overflow: hidden;
+}
+
+/*Sidebar style*/
+div#sidebar {
+  min-height: 100vh;
+  background-color: #21242E;
+  padding: 0;
+  position: fixed;
+  height: 100%;
+  width: 250px;
+  top: 0;
+  left: 0;
+  box-shadow: 10px 0px 15px rgba(33, 36, 46, 0.4);
+  z-index: 10;
+}
+
+/* ----------| Menu item*/
+#sidebar .list-group a {
+  height: 50px;
+  color: white;
+}
+
+/* ----------| Submenu item*/
+#sidebar .list-group li.list-group-item {
+  background-color: #21242E;
+}
+
+#sidebar .list-group .sidebar-submenu a {
+  height: 45px;
+  padding-left: 30px;
+}
+
+.sidebar-submenu {
+  font-size: 0.9rem;
+}
+
+/* ----------| Separators */
+.sidebar-separator-title {
+  background-color: #21242E;
+  height: 35px;
+}
+
+.sidebar-separator {
+  background-color: #21242E;
+  height: 25px;
+}
+
+.logo-separator {
+  background-color: #21242E;
+  height: 60px;
+}
+
+a.bg-dark {
+  background-color: #21242E !important;
+}
+
+
+/*Fixed top bar style*/
+div#topbar {
+  padding: 10px 20px 10px 260px;
+  background-color: #21242E;
+  box-shadow: 0px 7px 5px rgba(0, 0, 0, 0.4);
+  position: fixed;
+  height: 55px;
+  top: 0;
+  left: 0;
+  color: #FFFFFF;
+  font-size: 16px;
+}
+
+/*Unhide content from top bar*/
+div#content {
+  margin-top:60px;
+  padding: 0px 25px 0px 25px;
+  background: white;
+  width: 100%;
+}
+
+/*Scroll fix (not over topbar)*/
+div.pre-scrollable {
+  max-height: 100vh;
+  overflow-y: scroll;
+}
+
+
+/*Login buttons*/
+.btn-default:hover {
+  color: #FFF;
+  background: rgba(108, 88, 179, 0.75);
+  border: 2px solid rgba(108, 89, 179, 0.75);
+}
+
+.btn-primary:hover {
+  font-size: 16px;
+  color: rgba(55, 141, 255, 0.75);
+  letter-spacing: 1px;
+  line-height: 15px;
+  border: 2px solid rgba(55, 141, 255, 0.75);
+  border-radius: 40px;
+  background: transparent;
+  transition: all 0.3s ease 0s;
+}
+
+.btn-primary {
+  font-size: 16px;
+  color: rgba(255, 255, 255, 0.75);
+  background: #015aff;
+  letter-spacing: 1px;
+  line-height: 15px;
+  border: 2px solid rgba(1, 90, 255, 0.75);
+  border-radius: 40px;
+  transition: all 0.3s ease 0s;
+}
+
+
+/*=========LOGIN style =====*/
+[class*="fontawesome-"]:before {
+  font-family: 'FontAwesome', sans-serif;
+}
+
+/*!* ---------- GENERAL ---------- *!*/
+/** {*/
+/*  -moz-box-sizing: border-box;*/
+/*  box-sizing: border-box;*/
+/*}*/
+/**:before, *:after {*/
+/*  -moz-box-sizing: border-box;*/
+/*  box-sizing: border-box;*/
+/*}*/
+
+body {
+  background: #2c3338;
+  color: #606468;
+  font: 87.5%/1.5em 'Open Sans', sans-serif;
+  margin: 0;
+}
+
+a {
+  color: #eee;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+input {
+  border: none;
+  font-family: 'Open Sans', Arial, sans-serif;
+  font-size: 14px;
+  line-height: 1.5em;
+  padding: 0;
+  -webkit-appearance: none;
+}
+
+p {
+  line-height: 1.5em;
+}
+
+.clearfix {
+  *zoom: 1;
+}
+.clearfix:before, .clearfix:after {
+  content: ' ';
+  display: table;
+}
+.clearfix:after {
+  clear: both;
+}
+
+.loginContainer {
+  left: 50%;
+  position: fixed;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+/* ---------- LOGIN ---------- */
+#login {
+  width: 280px;
+  align-self: center;
+}
+
+#login form span {
+  background-color: #363b41;
+  border-radius: 3px 0px 0px 3px;
+  color: #606468;
+  display: block;
+  float: left;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  width: 50px;
+}
+
+#login form input {
+  height: 50px;
+}
+
+#login form input[type="text"], input[type="password"] {
+  background-color: #3b4148;
+  border-radius: 0px 3px 3px 0px;
+  color: #606468;
+  margin-bottom: 1em;
+  padding: 0 16px;
+  width: 230px;
+}
+
+#login form input[type="submit"] {
+  border-radius: 3px;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  background-color: #ea4c88;
+  color: #eee;
+  font-weight: bold;
+  margin-bottom: 2em;
+  text-transform: uppercase;
+  width: 280px;
+}
+
+#login form input[type="submit"]:hover {
+  background-color: #d44179;
+}
+
+#login > p {
+  text-align: center;
+}
+
+#login > p span {
+  padding-left: 5px;
+}
+
+/*END =========LOGIN style =====*/
