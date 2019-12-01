@@ -1,5 +1,9 @@
 <?php
-    include_once "basicHeader.php"
+
+
+include_once "basicHeader.php";
+
+
 ?>
 
 
@@ -103,14 +107,14 @@
 <div id="topbar" style="width: 100%">
     <div class="row">
         <h4 class="col-auto mr-auto"> Užsienio kalbų žodžių mokymosi aplinka</h4>
-        <a href="login.php" style="margin-right:25px; float: right" class="col-auto  btn btn-primary">
+        <a href="login.php" style="margin-right:25px; float: right" class="col-auto  btn btn-primary btn-blue">
             <span class="fa fa-sign-in-alt fa-fw mr-3"></span>
             Prisijungti
         </a>
-        <button type="button" class="col-auto  btn btn-primary">
+        <a href="register.php" class="col-auto  btn btn-primary btn-pink">
             <span class="fa fa-user-plus fa-fw mr-3"></span>
             Užsiregistruoti
-        </button>
+        </a>
     </div>
 
 </div>

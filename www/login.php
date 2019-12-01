@@ -4,22 +4,30 @@ include_once "basicHeader.php";
 
 <div class="loginContainer">
     <div id="login">
-        <form action="javascript:void(0);" method="POST">
+        <form action="index.php" method="POST">
             <fieldset class="clearfix">
                 <p><span class="fontawesome-user"></span><input type="text"
                                                                 placeholder="El.paštas"
-                                                                required></p>
+                                                                required
+                                                                oninvalid="this.setCustomValidity('Reikalingas elektroninis paštas')"
+                                                                oninput="this.setCustomValidity('')"
+                                                                ></p>
 
                 <p><span class="fontawesome-lock"></span><input type="password"
-                                                                placeholder='Slaptažodis'"
-                                                                required></p>
+                                                                placeholder="Slaptažodis"
+                                                                required
+                                                                oninvalid="this.setCustomValidity('Reikalingas slaptažodis')"
+                                                                oninput="this.setCustomValidity('')"
+                                                                ></p>
 
                 <p><input type="submit" value="Prisijungti"></p>
             </fieldset>
         </form>
-        <p>Nėra paskyros? <a href="#">Užsiregistruoti</a><span class="fontawesome-arrow-right"></span></p>
+        <p>Nėra paskyros? <a href="register.php">Užsiregistruoti</a><span class="fontawesome-arrow-right"></span></p>
+        <p><span class="fontawesome-home"></span> <a href="index.php">Grįžti</a></p>
     </div>
 </div>
-</body>
 
+
+</body>
 </html>
