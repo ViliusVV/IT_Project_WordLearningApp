@@ -61,6 +61,7 @@ include_once "basicHeader.php";
         console.log("ready");
         $("#regsubmit").click(function () {
             $("#register").trigger("change");
+
         });
 
         $("#register").change(function () {
@@ -70,7 +71,8 @@ include_once "basicHeader.php";
             let email = $('#email');
             let password = $('#password');
             let password_r = $('#password_r');
-            let error_ = false;
+            let error_ = true;
+
             console.log(name.val());
             console.log(isNormalString(name.val()));
 

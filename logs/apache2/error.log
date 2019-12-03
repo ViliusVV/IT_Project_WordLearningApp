@@ -68,3 +68,8 @@ sh: 1: -t: not found
 sh: 1: -t: not found
 sh: 1: -t: not found
 [Sun Dec 01 03:10:49.988290 2019] [php7:error] [pid 24] [client 172.19.0.1:42264] script '/var/www/html/setup_config.php' not found or unable to stat, referer: http://localhost/setup_config.php
+[Mon Dec 02 02:35:50.409663 2019] [mpm_prefork:notice] [pid 1] AH00170: caught SIGWINCH, shutting down gracefully
+AH00558: apache2: Could not reliably determine the server's fully qualified domain name, using 172.19.0.3. Set the 'ServerName' directive globally to suppress this message
+Cannot load Xdebug - it was already loaded
+[Mon Dec 02 15:32:48.920167 2019] [mpm_prefork:notice] [pid 1] AH00163: Apache/2.4.25 (Debian) PHP/7.3.11 configured -- resuming normal operations
+[Mon Dec 02 15:32:48.920322 2019] [core:notice] [pid 1] AH00094: Command line: 'apache2 -D FOREGROUND'
