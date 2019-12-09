@@ -31,10 +31,5 @@ session_start()
     <script src="assets/js/bootstrap.min.js"></script>
     <script src="assets/js/select2.min.js"></script>
     <script src="assets/js/perfect-scrollbar.min.js"></script>
-
-
-
-
 </head>
-
 <body>

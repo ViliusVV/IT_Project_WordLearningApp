@@ -1,6 +1,17 @@
 /*[ FONT SIZE ]
 ///////////////////////////////////////////////////////////
 */
+
+.w-5 {width: 5%;}
+.w-10 {width: 10%;}
+.w-15 {width: 15%;}
+.w-20 {width: 20%;}
+.w-30 {width: 30%;}
+.w-40 {width: 40%;}
+.w-50 {width: 50%;}
+
+
+
 .fs-1 {font-size: 1px;}
 .fs-2 {font-size: 2px;}
 .fs-3 {font-size: 3px;}

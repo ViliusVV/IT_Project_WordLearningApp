@@ -15,9 +15,9 @@ sudo apt-get update
 sudo apt-get -y install docker-ce docker-ce-cli containerd.io
 # Install docker compose
 sudo apt-get -y install docker-compose
-
 # Test out docker
 sudo docker run hello-world
-
+# Set fancy url
+echo -e "127.0.0.1\tzodynas.proj.kt" | sudo tee -a /etc/hosts
 # Run project
 sudo docker-compose up -d

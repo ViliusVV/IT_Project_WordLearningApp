@@ -52,13 +52,39 @@ include_once "basicHeader.php";
             </div>
         </div>
 
+        <div>
+            <a href="#submenu2" data-toggle="collapse" aria-expanded="false" data-parent="#sidebarGroup"
+               class="bg-dark list-group-item list-group-item-action flex-column align-items-start">
+                <div class="d-flex w-100 justify-content-start align-items-center">
+                    <i class="fas fa-book-reader fa-fw mr-3"></i>
+                    <span class="menu-collapsed">Mano žodynas</span>
+                    <span class="submenu-icon ml-auto"></span>
+                </div>
+            </a>
+            <!-- Submenu content -->
+            <div id='submenu2' class="collapse sidebar-submenu">
+                <a href="wordlearn.php" class="list-group-item list-group-item-action bg-dark text-white">
+                    <span class="menu-collapsed">Sukuriti žodyna</span>
+                </a>
+                <a href="#" class="list-group-item list-group-item-action bg-dark text-white">
+                    <span class="menu-collapsed">Mokytis Žodyna</span>
+                </a>
+            </div>
+        </div>
+
+        <a href="report.php" class="bg-dark list-group-item list-group-item-action">
+            <div class="d-flex w-100 justify-content-start align-items-center">
+                <span class="fa fa-chart-line fa-fw mr-3"></span>
+                <span class="menu-collapsed">Reportai ir statistika</span>
+            </div>
+        </a>
 
         <!-- Separator with title -->
         <li class="list-group-item sidebar-separator-title text-muted d-flex align-items-center menu-collapsed">
             <small>NUSTATYMAI</small>
         </li>
         <!-- /END Separator -->
-        <a href="#submenu2" data-toggle="collapse" aria-expanded="false" data-parent="#sidebarGroup"
+        <a href="#submenu3" data-toggle="collapse" aria-expanded="false" data-parent="#sidebarGroup"
            class="bg-dark list-group-item list-group-item-action flex-column align-items-start">
             <div class="d-flex w-100 justify-content-start align-items-center">
                 <span class="fa fa-user fa-fw mr-3"></span>
@@ -67,7 +93,7 @@ include_once "basicHeader.php";
             </div>
         </a>
         <!-- Submenu content -->
-        <div id='submenu2' class="collapse sidebar-submenu">
+        <div id='submenu3' class="collapse sidebar-submenu">
             <a href="#" class="list-group-item list-group-item-action bg-dark text-white">
                 <span class="menu-collapsed">Nustatymai</span>
             </a>
@@ -81,7 +107,7 @@ include_once "basicHeader.php";
             <small>ADMINISTRATORIUS</small>
         </li>
         <!-- /END Separator -->
-        <a href="#" class="bg-dark list-group-item list-group-item-action">
+        <a href="userlist.php" class="bg-dark list-group-item list-group-item-action">
             <div class="d-flex w-100 justify-content-start align-items-center">
                 <span class="fa fa-users fa-fw mr-3"></span>
                 <span class="menu-collapsed">Profilių redagavimas</span>
@@ -94,13 +120,7 @@ include_once "basicHeader.php";
             <small>MODERAVIMAS</small>
         </li>
         <!-- /END Separator -->
-        <a href="#" class="bg-dark list-group-item list-group-item-action">
-            <div class="d-flex w-100 justify-content-start align-items-center">
-                <span class="fa fa-book-medical fa-fw mr-3"></span>
-                <span class="menu-collapsed">Žodynų sukurimas</span>
-            </div>
-        </a>
-        <a href="#" class="bg-dark list-group-item list-group-item-action">
+        <a href="wordlist.php"" class="bg-dark list-group-item list-group-item-action">
             <div class="d-flex w-100 justify-content-start align-items-center">
                 <span class="fa fa-envelope-open-text fa-fw mr-3"></span>
                 <span class="menu-collapsed">Žodynų redagavimas</span>
@@ -129,18 +149,49 @@ include_once "basicHeader.php";
 </div>
 
 <div id="topbar" style="display: flex;">
-    <div class="row" style="width: 100%; margin: auto;">
+    <div id="topbar-row" class="row" style="width: 100%; margin: auto;">
         <h4 class="col-auto mr-auto"> Užsienio kalbų žodžių mokymosi aplinka</h4>
-        <a href="login.php" style="margin-right:25px; float: right" class="col-auto  btn btn-primary btn-blue">
+        <h4 id="user-header" style="margin-right: 25px"><span class="fa fa-user fa-fw mr-3"></span></h4>
+        <a id="login-button" href="login.php" style="margin-right:25px; float: right" class="col-auto  btn btn-primary btn-blue">
             <span class="fa fa-sign-in-alt fa-fw mr-3"></span>
             Prisijungti
         </a>
-        <a href="register.php" class="col-auto  btn btn-primary btn-pink">
+        <a id="register-button" href="register.php" class="col-auto  btn btn-primary btn-pink">
             <span class="fa fa-user-plus fa-fw mr-3"></span>
             Užsiregistruoti
         </a>
+        <a id="logout-button" href="logout.php" class="col-auto  btn btn-primary btn-pink">
+            <span class="fa fa-sign-out-alt fa-fw mr-3"></span>
+            Atsijungti
+        </a>
     </div>
 </div>
+
+<script>
+
+    isLogged = true;
+
+    if(isLogged)
+    {
+        $(document).ready(function ()
+        {
+            $("#user-header").append("Vardas");
+            $("#login-button").hide();
+            $("#register-button").hide();
+        });
+    }
+    else
+    {
+        $(document).ready(function ()
+        {
+            $("#user-header").hide();
+            $("#logout-button").hide();
+            $("#sidebar").hide()
+            $("body").css("padding-left", "0px");
+            $("#topbar").css("padding", "10px 20px 10px 20px")
+        });
+    }
+</script>
 
 <div id="content" class="js-pscroll">
 

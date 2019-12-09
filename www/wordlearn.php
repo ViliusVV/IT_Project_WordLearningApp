@@ -29,6 +29,38 @@ include_once "header.php"
     </div>
 </div>
 
+
+    <div class="card bg-dark border-left-info shadow py-2">
+        <div class="card-body">
+            <div class="row no-gutters align-items-center">
+                <div class="col mr-2">
+                    <div class="text-xs font-weight-bold text-info text-uppercase mb-1">Progresas</div>
+                    <div class="row no-gutters align-items-center">
+                        <div class="col-auto">
+                            <div class="h5 mb-0 mr-3 font-weight-bold text-gray-800">69%</div>
+                        </div>
+                        <div class="col">
+                            <div class="progress progress-striped active progress-sm mr-2">
+                                <div class="progress-bar bg-info" role="progressbar" style="width: 69%"
+                                     aria-valuenow="69" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-auto">
+                    <i class="fas fa-book fa-2x text-gray-300"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<!--<script>-->
+<!--    $(document).ready(function () -->
+<!--    {-->
+<!--        $()    -->
+<!--    })-->
+<!--</script>-->
+
 <?php
     include_once "footer.php"
 ?>
