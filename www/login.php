@@ -6,6 +6,7 @@ include_once "basicHeader.php";
     <div id="login">
         <form action="index.php" method="POST">
             <fieldset class="clearfix">
+                <p id="warning" style="color: #bd4147; text-align: center">*Nėra tokio vartotojo arba neteisingas slaptažodis</p>
                 <p><span class="fontawesome-user"></span><input type="text"
                                                                 placeholder="El.paštas"
                                                                 required

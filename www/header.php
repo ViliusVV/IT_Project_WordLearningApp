@@ -41,13 +41,10 @@ include_once "basicHeader.php";
                     <span class="menu-collapsed">Lietuvių-anglų</span>
                 </a>
                 <a href="#" class="list-group-item list-group-item-action bg-dark text-white">
-                    <span class="menu-collapsed">Lotynų-Lietuvių</span>
+                    <span class="menu-collapsed">Lietuvių-Lotynų</span>
                 </a>
                 <a href="#" class="list-group-item list-group-item-action bg-dark text-white">
-                    <span class="menu-collapsed">Anglų-Kinų</span>
-                </a>
-                <a href="#" class="list-group-item list-group-item-action bg-dark text-white">
-                    <span class="menu-collapsed">Vokiečių-Lotynų</span>
+                    <span class="menu-collapsed">Anglų-Esperanto</span>
                 </a>
             </div>
         </div>
@@ -63,44 +60,44 @@ include_once "basicHeader.php";
             </a>
             <!-- Submenu content -->
             <div id='submenu2' class="collapse sidebar-submenu">
-                <a href="wordlearn.php" class="list-group-item list-group-item-action bg-dark text-white">
+                <a href="wordlist.php" class="list-group-item list-group-item-action bg-dark text-white">
                     <span class="menu-collapsed">Sukuriti žodyna</span>
                 </a>
-                <a href="#" class="list-group-item list-group-item-action bg-dark text-white">
+                <a href="mylearn.php" class="list-group-item list-group-item-action bg-dark text-white">
                     <span class="menu-collapsed">Mokytis Žodyna</span>
                 </a>
             </div>
         </div>
 
-        <a href="report.php" class="bg-dark list-group-item list-group-item-action">
+        <a href="reportoptions.php" class="bg-dark list-group-item list-group-item-action">
             <div class="d-flex w-100 justify-content-start align-items-center">
                 <span class="fa fa-chart-line fa-fw mr-3"></span>
-                <span class="menu-collapsed">Reportai ir statistika</span>
+                <span class="menu-collapsed">Ataskaitos ir statistika</span>
             </div>
         </a>
 
-        <!-- Separator with title -->
-        <li class="list-group-item sidebar-separator-title text-muted d-flex align-items-center menu-collapsed">
-            <small>NUSTATYMAI</small>
-        </li>
-        <!-- /END Separator -->
-        <a href="#submenu3" data-toggle="collapse" aria-expanded="false" data-parent="#sidebarGroup"
-           class="bg-dark list-group-item list-group-item-action flex-column align-items-start">
-            <div class="d-flex w-100 justify-content-start align-items-center">
-                <span class="fa fa-user fa-fw mr-3"></span>
-                <span class="menu-collapsed">Profilis</span>
-                <span class="submenu-icon ml-auto"></span>
-            </div>
-        </a>
-        <!-- Submenu content -->
-        <div id='submenu3' class="collapse sidebar-submenu">
-            <a href="#" class="list-group-item list-group-item-action bg-dark text-white">
-                <span class="menu-collapsed">Nustatymai</span>
-            </a>
-            <a href="#" class="list-group-item list-group-item-action bg-dark text-white">
-                <span class="menu-collapsed">Slaptažodžio keitimas</span>
-            </a>
-        </div>
+<!--        Separator with title -->
+<!--        <li class="list-group-item sidebar-separator-title text-muted d-flex align-items-center menu-collapsed">-->
+<!--            <small>NUSTATYMAI</small>-->
+<!--        </li>-->
+<!--       /END Separator -->
+<!--        <a href="#submenu3" data-toggle="collapse" aria-expanded="false" data-parent="#sidebarGroup"-->
+<!--           class="bg-dark list-group-item list-group-item-action flex-column align-items-start">-->
+<!--            <div class="d-flex w-100 justify-content-start align-items-center">-->
+<!--                <span class="fa fa-user fa-fw mr-3"></span>-->
+<!--                <span class="menu-collapsed">Profilis</span>-->
+<!--                <span class="submenu-icon ml-auto"></span>-->
+<!--            </div>-->
+<!--        </a>-->
+<!--         Submenu content -->
+<!--        <div id='submenu3' class="collapse sidebar-submenu">-->
+<!--            <a href="#" class="list-group-item list-group-item-action bg-dark text-white">-->
+<!--                <span class="menu-collapsed">Nustatymai</span>-->
+<!--            </a>-->
+<!--            <a href="#" class="list-group-item list-group-item-action bg-dark text-white">-->
+<!--                <span class="menu-collapsed">Slaptažodžio keitimas</span>-->
+<!--            </a>-->
+<!--        </div>-->
 
         <!-- Separator with title -->
         <li class="list-group-item sidebar-separator-title text-muted d-flex align-items-center menu-collapsed">
@@ -120,12 +117,34 @@ include_once "basicHeader.php";
             <small>MODERAVIMAS</small>
         </li>
         <!-- /END Separator -->
-        <a href="wordlist.php"" class="bg-dark list-group-item list-group-item-action">
-            <div class="d-flex w-100 justify-content-start align-items-center">
-                <span class="fa fa-envelope-open-text fa-fw mr-3"></span>
-                <span class="menu-collapsed">Žodynų redagavimas</span>
+        <div>
+            <a href="#submenu3" data-toggle="collapse" aria-expanded="false" data-parent="#sidebarGroup"
+               class="bg-dark list-group-item list-group-item-action flex-column align-items-start">
+                <div class="d-flex w-100 justify-content-start align-items-center">
+                    <i class="fas fa-book-open fa-fw mr-3"></i>
+                    <span class="menu-collapsed">Redaguoti žodyną</span>
+                    <span class="submenu-icon ml-auto"></span>
+                </div>
+            </a>
+            <!-- Submenu content -->
+            <div id='submenu3' class="collapse sidebar-submenu">
+                <a href="wordlist.php" class="list-group-item list-group-item-action bg-dark text-white">
+                    <span class="menu-collapsed">Lietuvių-anglų</span>
+                </a>
+                <a href="wordlist.php" class="list-group-item list-group-item-action bg-dark text-white">
+                    <span class="menu-collapsed">Lietuvių-Lotynų</span>
+                </a>
+                <a href="wordlist.php" class="list-group-item list-group-item-action bg-dark text-white">
+                    <span class="menu-collapsed">Anglų-Esperanto</span>
+                </a>
             </div>
-        </a>
+        </div>
+<!--        <a href="wordlist.php"" class="bg-dark list-group-item list-group-item-action">-->
+<!--            <div class="d-flex w-100 justify-content-start align-items-center">-->
+<!--                <span class="fa fa-envelope-open-text fa-fw mr-3"></span>-->
+<!--                <span class="menu-collapsed">Žodynų redagavimas</span>-->
+<!--            </div>-->
+<!--        </a>-->
 
 
         <!--        <li class="list-group-item sidebar-separator menu-collapsed"></li>-->
@@ -175,7 +194,7 @@ include_once "basicHeader.php";
     {
         $(document).ready(function ()
         {
-            $("#user-header").append("Vardas");
+            $("#user-header").append("Vardas Pavardė (Administratorius)");
             $("#login-button").hide();
             $("#register-button").hide();
         });

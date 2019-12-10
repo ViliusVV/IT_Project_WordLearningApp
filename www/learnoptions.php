@@ -11,8 +11,8 @@ include_once "header.php"
         </h4>
         <br>
         <div class="card-body" style="text-align: center">
+            <p id="warning" style="color: #bd4147; text-align: center">Pasirinkite visus punktus!</p>
             <h2 class="card-title">Nustaymai</h2>
-
             <br> Pasirinkite tematiką: <br>
             <select name="theme" id="theme">
                 <option disabled selected value="noselect">Pasirinkite...</option>

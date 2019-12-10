@@ -1,5 +1,23 @@
 <?php
 include_once "basicHeader.php";
+//include "includes/dbHelper.inc.php";
+
+
+//$query = "INSERT INTO users(name, surname, email, passhash, role)";
+//
+//$result = mysqli_query($link, $query);
+//
+//while ($row = mysqli_fetch_array($result)) {
+//    echo $row[0] . ': ' . $row[1] . ' ' . $row[2];
+//    echo '<br />';
+//}
+//
+//mysqli_free_result($result);
+//
+//mysqli_close($link);
+//
+//
+//echo $_POST["name"];
 ?>
 
 <script>

@@ -26,7 +26,129 @@ include_once "header.php"
                     <td class="cell100 w-30">lisqrnd@gmx.com/td>
                     <td class="cell100 w-15">
                         <a href="userlist.php" type="button" class="col-sm btn btn-success btn-circle"><i class="fa fa-edit"></i></a>
+                        <button id="del1" href="userlist.php" type="button" class="col-sm btn btn-danger btn-circle m-l-20"><i class="fa fa-user-edit"></i>
+                    </td>
+                </tr>
+
+                <tr class="row100 body">
+                    <td class="cell100 w-15 p-l-40">5</td>
+                    <td class="cell100 w-40"">Test Test2</td>
+                    <td class="cell100 w-30">lisqrnd@gmx.com/td>
+                    <td class="cell100 w-15">
+                        <a href="userlist.php" type="button" class="col-sm btn btn-success btn-circle"><i class="fa fa-edit"></i></a>
+                        <button href="userlist.php" type="button" class="col-sm btn btn-danger btn-circle m-l-20"><i class="fa fa-user-edit"></i>
+                    </td>
+                </tr>
+
+
+                <tr class="row100 body">
+                    <td class="cell100 w-15 p-l-40">5</td>
+                    <td class="cell100 w-40"">Test Test2</td>
+                    <td class="cell100 w-30">lisqrnd@gmx.com/td>
+                    <td class="cell100 w-15">
+                        <a href="userlist.php" type="button" class="col-sm btn btn-success btn-circle"><i class="fa fa-edit"></i></a>
                         <a href="userlist.php" type="button" class="col-sm btn btn-danger btn-circle m-l-20"><i class="fa fa-user-edit"></i>
+                    </td>
+                </tr>
+
+                <tr class="row100 body">
+                    <td class="cell100 w-15 p-l-40">5</td>
+                    <td class="cell100 w-40"">Test Test2</td>
+                    <td class="cell100 w-30">lisqrnd@gmx.com/td>
+                    <td class="cell100 w-15">
+                        <a href="userlist.php" type="button" class="col-sm btn btn-success btn-circle"><i class="fa fa-edit"></i></a>
+                        <a href="userlist.php" type="button" class="col-sm btn btn-danger btn-circle m-l-20"><i class="fa fa-user-edit"></i>
+                    </td>
+                </tr>
+                <tr class="row100 body">
+                    <td class="cell100 w-15 p-l-40">5</td>
+                    <td class="cell100 w-40"">Test Test2</td>
+                    <td class="cell100 w-30">lisqrnd@gmx.com/td>
+                    <td class="cell100 w-15">
+                        <a href="userlist.php" type="button" class="col-sm btn btn-success btn-circle"><i class="fa fa-edit"></i></a>
+                        <a href="userlist.php" type="button" class="col-sm btn btn-danger btn-circle m-l-20"><i class="fa fa-user-edit"></i>
+                    </td>
+                </tr>
+                <tr class="row100 body">
+                    <td class="cell100 w-15 p-l-40">5</td>
+                    <td class="cell100 w-40"">Test Test2</td>
+                    <td class="cell100 w-30">lisqrnd@gmx.com/td>
+                    <td class="cell100 w-15">
+                        <a href="userlist.php" type="button" class="col-sm btn btn-success btn-circle"><i class="fa fa-edit"></i></a>
+                        <a href="userlist.php" type="button" class="col-sm btn btn-danger btn-circle m-l-20"><i class="fa fa-user-edit"></i>
+                    </td>
+                </tr>
+                <tr class="row100 body">
+                    <td class="cell100 w-15 p-l-40">5</td>
+                    <td class="cell100 w-40"">Test Test2</td>
+                    <td class="cell100 w-30">lisqrnd@gmx.com/td>
+                    <td class="cell100 w-15">
+                        <a href="userlist.php" type="button" class="col-sm btn btn-success btn-circle"><i class="fa fa-edit"></i></a>
+                        <a href="userlist.php" type="button" class="col-sm btn btn-danger btn-circle m-l-20"><i class="fa fa-user-edit"></i>
+                    </td>
+                </tr>
+                <tr class="row100 body">
+                    <td class="cell100 w-15 p-l-40">5</td>
+                    <td class="cell100 w-40"">Test Test2</td>
+                    <td class="cell100 w-30">lisqrnd@gmx.com/td>
+                    <td class="cell100 w-15">
+                        <a href="userlist.php" type="button" class="col-sm btn btn-success btn-circle"><i class="fa fa-edit"></i></a>
+                        <a href="userlist.php" type="button" class="col-sm btn btn-danger btn-circle m-l-20"><i class="fa fa-user-edit"></i>
+                    </td>
+                </tr>
+                <tr class="row100 body">
+                    <td class="cell100 w-15 p-l-40">5</td>
+                    <td class="cell100 w-40"">Test Test2</td>
+                    <td class="cell100 w-30">lisqrnd@gmx.com/td>
+                    <td class="cell100 w-15">
+                        <a href="userlist.php" type="button" class="col-sm btn btn-success btn-circle"><i class="fa fa-edit"></i></a>
+                        <a href="userlist.php" type="button" class="col-sm btn btn-danger btn-circle m-l-20"><i class="fa fa-user-edit"></i>
+                    </td>
+                </tr>
+
+                <tr class="row100 body">
+                    <td class="cell100 w-15 p-l-40">5</td>
+                    <td class="cell100 w-40"">Test Test2</td>
+                    <td class="cell100 w-30">lisqrnd@gmx.com/td>
+                    <td class="cell100 w-15">
+                        <a href="userlist.php" type="button" class="col-sm btn btn-success btn-circle"><i class="fa fa-edit"></i></a>
+                        <a href="userlist.php" type="button" class="col-sm btn btn-danger btn-circle m-l-20"><i class="fa fa-user-edit"></i>
+                    </td>
+                </tr>
+                <tr class="row100 body">
+                    <td class="cell100 w-15 p-l-40">5</td>
+                    <td class="cell100 w-40"">Test Test2</td>
+                    <td class="cell100 w-30">lisqrnd@gmx.com/td>
+                    <td class="cell100 w-15">
+                        <a href="userlist.php" type="button" class="col-sm btn btn-success btn-circle"><i class="fa fa-edit"></i></a>
+                        <a href="userlist.php" type="button" class="col-sm btn btn-danger btn-circle m-l-20"><i class="fa fa-user-edit"></i>
+                    </td>
+                </tr>
+                <tr class="row100 body">
+                    <td class="cell100 w-15 p-l-40">5</td>
+                    <td class="cell100 w-40"">Test Test2</td>
+                    <td class="cell100 w-30">lisqrnd@gmx.com/td>
+                    <td class="cell100 w-15">
+                        <a href="userlist.php" type="button" class="col-sm btn btn-success btn-circle"><i class="fa fa-edit"></i></a>
+                        <a href="userlist.php" type="button" class="col-sm btn btn-danger btn-circle m-l-20"><i class="fa fa-user-edit"></i>
+                    </td>
+                </tr>
+                <tr class="row100 body">
+                    <td class="cell100 w-15 p-l-40">5</td>
+                    <td class="cell100 w-40"">Test Test2</td>
+                    <td class="cell100 w-30">lisqrnd@gmx.com/td>
+                    <td class="cell100 w-15">
+                        <a href="userlist.php" type="button" class="col-sm btn btn-success btn-circle"><i class="fa fa-edit"></i></a>
+                        <a href="userlist.php" type="button" class="col-sm btn btn-danger btn-circle m-l-20"><i class="fa fa-user-edit"></i>
+                    </td>
+                </tr>
+                <tr class="row100 body">
+                    <td class="cell100 w-15 p-l-40">5</td>
+                    <td class="cell100 w-40"">Test Test2</td>
+                    <td class="cell100 w-30">lisqrnd@gmx.com/td>
+                    <td class="cell100 w-15">
+                        <a href="useredit.php" type="button" class="col-sm btn btn-success btn-circle"><i class="fa fa-user-edit"></i></a>
+                        <a href="useredit.php" type="button" class="col-sm btn btn-danger btn-circle m-l-20"><i class="fa fa-times"></i>
                     </td>
                 </tr>
 
@@ -37,6 +159,17 @@ include_once "header.php"
             </table>
         </div>
     </div>
+
+
+<script>
+    $(document).ready(function ()
+    {
+        $('button').click(function ()
+        {
+            confirm("Ar tikrai norite pašalinti šį vartotoją");
+        })
+    })
+</script>
 
 
 <?php
