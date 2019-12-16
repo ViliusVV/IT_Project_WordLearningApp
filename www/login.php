@@ -1,41 +1,48 @@
 <?php
 include_once "basicHeader.php";
 include "includes/dbHelper.inc.php";
+include "includes/helperFunctions.inc.php";
 //
 //
 //    $email = $_POST["email"];
 //    $password = $_POST["password"];
 //
 
+if(isset($_POST["email"])) {
     $email = $_POST["email"];
     $password = $_POST["password"];
 
-    $email = 'user@mail.com';
-    $sql = "SELECT * FROM user WHERE user.email LIKE '.".$email.".'";
-
-    $stmt = mysqli_prepare($dbConn, "SELECT * FROM user WHERE user.email LIKE '?'");
+    $sql = "SELECT * FROM user WHERE user.email LIKE ?";
+    $stmt = mysqli_prepare($dbConn, $sql);
     mysqli_stmt_bind_param($stmt, 's', $email);
-    $result = mysqli_query($dbConn, $sql);
-
-    if ($result) {
-        while($row = mysqli_fetch_assoc($result)) {
-            echo "id: " . $row["id"]. " - Name: " . $row["name"]. " " . $row["password"]. "<br>";
+    mysqli_stmt_execute($stmt);
+    $result = mysqli_stmt_get_result($stmt);
+    $row = mysqli_fetch_assoc($result);
+    if ($row != null) {
+        if(password_verify($password, $row["pass_hash"])) {
+            $_SESSION["user_id"] = $row["user_id"];
+            $_SESSION["email"] = $email;
+            $_SESSION["name"] = $row["name"];
+            $_SESSION["surname"] = $row["surname"];
+            $_SESSION["role_id"] = $row["role"];
+            GoToNow("index.php");
         }
-    } else {
-        echo "0 results";
+        else
+        {
+            $passbad = null;
+        }
     }
-
-
-
-echo "etset<br>";
-echo $email."<br>".$password;
-echo "etset<br>";
+}
 ?>
 
 <div class="loginContainer">
     <div id="login">
         <form action="login.php" method="POST">
-<!--                <p id="warning" style="color: #bd4147; text-align: center">*Nėra tokio vartotojo arba neteisingas slaptažodis</p>-->
+<?php
+    if($row == null and isset($_POST["email"]) or $passbad){
+        echo '<p id="warning" style="color: #bd4147; text-align: center">*Nėra tokio vartotojo arba neteisingas slaptažodis</p>';
+    }
+?>
                 <p><span class="fontawesome-user"></span><input type="text"
                                                                 name = "email"
                                                                 placeholder="El.paštas"

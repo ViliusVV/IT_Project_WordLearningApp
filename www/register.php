@@ -1,23 +1,35 @@
 <?php
 include_once "basicHeader.php";
-//include "includes/dbHelper.inc.php";
+include "includes/dbHelper.inc.php";
+include "includes/helperFunctions.inc.php";
+$succ = true;
+if(isset($_POST["email"])) {
+    $succ = true;
+    $email = strtolower($_POST["email"]);
+    $password = $_POST["password"];
+    $name = $_POST["name"];
+    $surname = $_POST["surname"];
 
+    $password = password_hash($password, PASSWORD_DEFAULT);
 
-//$query = "INSERT INTO users(name, surname, email, passhash, role)";
-//
-//$result = mysqli_query($link, $query);
-//
-//while ($row = mysqli_fetch_array($result)) {
-//    echo $row[0] . ': ' . $row[1] . ' ' . $row[2];
-//    echo '<br />';
-//}
-//
-//mysqli_free_result($result);
-//
-//mysqli_close($link);
-//
-//
-//echo $_POST["name"];
+    $sql = "SELECT * FROM user WHERE email LIKE '".$email."'";
+    $result = mysqli_query($dbConn, $sql);
+
+    if(mysqli_num_rows($result) < 1)
+    {
+        $sql = "INSERT INTO user(name, surname, email, pass_hash, role) VALUES('%s', '%s', '%s', '%s', 1)";
+        $sql = sprintf($sql, $name, $surname, $email, $password);
+
+        if (mysqli_query($dbConn, $sql)) {
+            GoToNow("login.php");
+        } else {
+            echo "Error: " . $sql . "" . mysqli_error($dbConn);
+        }
+    }
+    else{
+        $succ = false;
+    }
+}
 ?>
 
 <script>
@@ -154,6 +166,11 @@ include_once "basicHeader.php";
     <div id="login">
         <form id="register" action="" method="POST">
             <p id="errors"></p>
+            <?php
+            if($succ == false){
+                echo '<p id="warning" style="color: #bd4147; text-align: center">*Klaida vartotojas tokiu el.paštu jau yra</p>';
+            }
+            ?>
             <p><span class="fontawesome-user"></span><input type="text"
                                                             id="name"
                                                             name="name"
