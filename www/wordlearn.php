@@ -17,7 +17,7 @@ include_once "header.php"
     <br>
     <div class="card-body" style="text-align: center">
         <p id="warning" style="color: #bd4147; text-align: center">Įveskite vertimą!</p>
-        <h2 class="card-title">Domum</h2>
+        <h2 class="card-title">House</h2>
         <br> Vertimas <br>
         <label>
             <input class="fancy-input" type="text" placeholder=Žodis>

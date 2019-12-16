@@ -15,8 +15,7 @@ include_once "header.php"
                 <h2 class="card-title">Nustaymai</h2>
                 <br> Pasirinkite tematiką: <br>
                 <select name="theme" id="theme">
-                    <option disabled selected value="noselect">Pasirinkite...</option>
-                    <option value="visi">Visi</option>
+                    <option selected value="visi">Visi</option>
                     <option value="gyvunai">Gyvūnai</option>
                     <option value="augalai">Augalai</option>
                     <option value="it">IT</option>
@@ -25,8 +24,7 @@ include_once "header.php"
 
                 <br> Pasirinkite sudėtingumą: <br>
                 <select name="difficulty" id="difficulty">
-                    <option disabled selected value="noselect">Pasirinkite...</option>
-                    <option value="visi">Visi</option>
+                    <option selected value="visi">Visi</option>
                     <option value="lengvai">Lengvai</option>
                     <option value="vidutiniskai">Vidutiniškai</option>
                     <option value="sunkai">Sunkiai</option>

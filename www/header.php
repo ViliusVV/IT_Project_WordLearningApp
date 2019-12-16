@@ -1,8 +1,6 @@
 <?php
 
-
-include_once "basicHeader.php";
-
+    include_once "basicHeader.php";
 
 ?>
 
