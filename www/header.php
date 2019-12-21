@@ -38,13 +38,13 @@ include "includes/helperFunctions.inc.php";
             </a>
             <!-- Submenu content -->
             <div id=\'submenu1\' class="collapse sidebar-submenu">
-                <a href="wordlearn.php" class="list-group-item list-group-item-action bg-dark text-white">
+                <a href="wordlearn.php?lang=liet-angl" class="list-group-item list-group-item-action bg-dark text-white">
                     <span class="menu-collapsed">Lietuvių-anglų</span>
                 </a>
-                <a href="#" class="list-group-item list-group-item-action bg-dark text-white">
+                <a href="wordlearn.php?lang=liet-lot" class="list-group-item list-group-item-action bg-dark text-white">
                     <span class="menu-collapsed">Lietuvių-Lotynų</span>
                 </a>
-                <a href="#" class="list-group-item list-group-item-action bg-dark text-white">
+                <a href="wordlearn.php?lang=angl-esper" class="list-group-item list-group-item-action bg-dark text-white">
                     <span class="menu-collapsed">Anglų-Esperanto</span>
                 </a>
             </div>
@@ -99,13 +99,13 @@ include "includes/helperFunctions.inc.php";
             </a>
             <!-- Submenu content -->
             <div id=\'submenu3\' class="collapse sidebar-submenu">
-                <a href="wordlist.php" class="list-group-item list-group-item-action bg-dark text-white">
+                <a href="wordlist.php"lang=liet-angl class="list-group-item list-group-item-action bg-dark text-white">
                     <span class="menu-collapsed">Lietuvių-anglų</span>
                 </a>
-                <a href="wordlist.php" class="list-group-item list-group-item-action bg-dark text-white">
+                <a href="wordlist.php?lang=liet-lot" class="list-group-item list-group-item-action bg-dark text-white">
                     <span class="menu-collapsed">Lietuvių-Lotynų</span>
                 </a>
-                <a href="wordlist.php" class="list-group-item list-group-item-action bg-dark text-white">
+                <a href="wordlist.php?lang=angl-esper" class="list-group-item list-group-item-action bg-dark text-white">
                     <span class="menu-collapsed">Anglų-Esperanto</span>
                 </a>
             </div>
