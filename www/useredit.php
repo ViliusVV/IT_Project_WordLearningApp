@@ -1,5 +1,26 @@
 <?php
-include_once "header.php"
+include_once "header.php";
+include_once "includes/dbHelper.inc.php";
+
+$user_id = $_GET["user_id"];
+
+if(isset($_POST["email"])) {
+    $sql = 'UPDATE user
+            SET name = "'.$_POST["name"].'", surname= "'.$_POST["surname"].'", email = "'.$_POST["email"].'"
+            WHERE user_id = '.$user_id.';';
+    $result = mysqli_query($dbConn, $sql);
+    ?>
+    <script type="text/javascript">
+        window.location.href = "userlist.php";
+    </script>
+    <?php
+    exit();
+}
+else {
+    $sql = "SELECT * FROM user WHERE user_id='$user_id'";
+    $result = mysqli_query($dbConn, $sql);
+    $row = mysqli_fetch_assoc($result);
+}
 ?>
 
     <script>
@@ -100,22 +121,6 @@ include_once "header.php"
                     email[0].setCustomValidity("")
                 }
 
-                if (password.val().length <= 5 || password.val().length > 15 )
-                {
-                    password[0].setCustomValidity("Reikalingas slaptažodis nuo 5 iki 15 simbolių");
-                    error_ = true;
-                } else {
-                    password[0].setCustomValidity("")
-                }
-
-                if (password_r.val().length <= 5 || password_r.val().length > 15 || password.val() !== password_r.val())
-                {
-                    password_r[0].setCustomValidity("Slaptažodžiai nesutampa");
-                    error_ = true;
-                } else {
-                    password_r[0].setCustomValidity("")
-                }
-
 
                 if(error_ === true)
                 {
@@ -142,39 +147,29 @@ include_once "header.php"
         <div class="card-body" style="text-align: center; height: 80% !important; padding-left: 25%; ">
             <div id="login">
                 <form id="register" action="" method="POST" style="float: right">
+
                     <p><span class="fontawesome-user"></span><input type="text"
                                                                     id="name"
                                                                     name="name"
                                                                     placeholder="Vardas"
-                        ></p>
+                                                                    <?php echo 'value="'.$row["name"].'"' ?>
+                        ></>
 
                     <p><span class="fontawesome-user"></span><input type="text"
                                                                     id="surname"
                                                                     name="surname"
                                                                     placeholder="Pavardė"
+                                                                    <?php echo 'value="'.$row["surname"].'"' ?>
                         ></p>
 
                     <p><span class="fontawesome-envelope"></span><input type="text"
                                                                         id="email"
                                                                         name="email"
                                                                         placeholder="El.paštas"
+                                                                        <?php echo 'value="'.$row["email"].'"' ?>
 
                         ></p>
-
-                    <p><span class="fontawesome-lock"></span><input type="password"
-                                                                    id="password"
-                                                                    name="password"
-                                                                    placeholder="Slaptažodis"
-
-                        ></p>
-
-                    <p><span class="fontawesome-lock"></span><input type="password"
-                                                                    id="password_r"
-                                                                    name="password_r"
-                                                                    placeholder="Pakartokite slaptažodį"
-
-                        ></p>
-                    <a href="index.php">
+                    <a href="userlist.php">
                         <button type="button" class="col-sm btn btn-danger btn-circle btn-xl" style="margin-right: 1em; margin-bottom: 1em"><i class="fa fa-arrow-left"></i></button>
                     </a>
                     <button id="regsubmit" type="submit" class="col-sm btn btn-success btn-circle btn-xl" style="margin-bottom: 1em"><i class="fa fa-check"></i></button>

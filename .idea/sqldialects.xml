@@ -3,6 +3,8 @@
   <component name="SqlDialectMappings">
     <file url="file://$PROJECT_DIR$/www/login.php" dialect="GenericSQL" />
     <file url="file://$PROJECT_DIR$/www/register.php" dialect="GenericSQL" />
+    <file url="file://$PROJECT_DIR$/www/useredit.php" dialect="GenericSQL" />
     <file url="file://$PROJECT_DIR$/www/wordlist.php" dialect="GenericSQL" />
+    <file url="PROJECT" dialect="MySQL" />
   </component>
 </project>
