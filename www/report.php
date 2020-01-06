@@ -6,10 +6,10 @@
 <div class="card bg-dark border-left-info shadow py-2 m-l-150 m-r-150">
 
     <h3 style="text-align: center">
-        <a id="login-button" href="#" style="margin-right:25px;" class="btn btn-primary btn-blue">
+        <button id="login-button" href="#" style="margin-right:25px;" class="send btn btn-primary btn-blue">
             <span class="fa fa-envelope fa-fw mr-3"></span>
             Išsiųsti ataskaita į el.paštą
-        </a><br><br>
+        </button><br><br>
         Vartotojas:  Vardenis Pavardenis <br>
         Žodynas:  Lietuvių-Anglų <br>
         Tematika:  Gyvūnai <br>
@@ -220,6 +220,23 @@
             </table>
         </div>
     </div>
+
+<script>
+    let email = "<?php echo $_SESSION["email"]; ?>";
+    let content = 'some random content here';
+    $(document).ready(function () {
+        $('.send').click(function () {
+            console.log(email);
+            data = new FormData()
+            data.set('email',email)
+            data.set('content', content)
+
+            let request = new XMLHttpRequest();
+            request.open("POST", 'includes/mailFunctions.inc.php', false);
+            request.send(data)
+        })
+    })
+</script>
 <?php
 include_once "footer.php"
 ?>

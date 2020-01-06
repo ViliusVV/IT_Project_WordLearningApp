@@ -11,5 +11,5 @@ if (!mysqli_set_charset($dbConn, "utf8")) {
     printf("Error loading character set utf8: %s\n", mysqli_error($dbConn));
     exit();
 } else {
-    printf("Current character set: %s\n", mysqli_character_set_name($dbConn));
+    //printf("Current character set: %s\n", mysqli_character_set_name($dbConn));
 }

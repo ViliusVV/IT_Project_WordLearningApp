@@ -44,8 +44,8 @@ include "includes/helperFunctions.inc.php";
                 <a href="wordlearn.php?lang=liet-lot" class="list-group-item list-group-item-action bg-dark text-white">
                     <span class="menu-collapsed">Lietuvių-Lotynų</span>
                 </a>
-                <a href="wordlearn.php?lang=angl-esper" class="list-group-item list-group-item-action bg-dark text-white">
-                    <span class="menu-collapsed">Anglų-Esperanto</span>
+                <a href="wordlearn.php?lang=angl-lot" class="list-group-item list-group-item-action bg-dark text-white">
+                    <span class="menu-collapsed">Anglų-Lotynų</span>
                 </a>
             </div>
         </div>
@@ -61,7 +61,7 @@ include "includes/helperFunctions.inc.php";
             </a>
             <!-- Submenu content -->
             <div id=\'submenu2\' class="collapse sidebar-submenu">
-                <a href="wordlist.php" class="list-group-item list-group-item-action bg-dark text-white">
+                <a href="wordlist.php?lang=private" class="list-group-item list-group-item-action bg-dark text-white">
                     <span class="menu-collapsed">Sukuriti žodyna</span>
                 </a>
                 <a href="mylearn.php" class="list-group-item list-group-item-action bg-dark text-white">
@@ -99,14 +99,14 @@ include "includes/helperFunctions.inc.php";
             </a>
             <!-- Submenu content -->
             <div id=\'submenu3\' class="collapse sidebar-submenu">
-                <a href="wordlist.php"lang=liet-angl class="list-group-item list-group-item-action bg-dark text-white">
+                <a href="wordlist.php?lang=liet-angl" class="list-group-item list-group-item-action bg-dark text-white">
                     <span class="menu-collapsed">Lietuvių-anglų</span>
                 </a>
                 <a href="wordlist.php?lang=liet-lot" class="list-group-item list-group-item-action bg-dark text-white">
                     <span class="menu-collapsed">Lietuvių-Lotynų</span>
                 </a>
-                <a href="wordlist.php?lang=angl-esper" class="list-group-item list-group-item-action bg-dark text-white">
-                    <span class="menu-collapsed">Anglų-Esperanto</span>
+                <a href="wordlist.php?lang=angl-lot" class="list-group-item list-group-item-action bg-dark text-white">
+                    <span class="menu-collapsed">Anglų-Lotynų</span>
                 </a>
             </div>
         </div>

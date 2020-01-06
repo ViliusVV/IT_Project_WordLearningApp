@@ -29,7 +29,7 @@ if(isset($_POST["email"])) {
         }
         else
         {
-            $passbad = null;
+            $passbad = true;
         }
     }
 }

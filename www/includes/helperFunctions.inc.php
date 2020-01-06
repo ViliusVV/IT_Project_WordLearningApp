@@ -22,3 +22,29 @@ function GetRole(){
         return "Administratorius";
     }
 }
+
+function translateTheme($dbConn, $id)
+{
+
+    $sql = 'SELECT * FROM theme WHERE theme_id='.$id;
+    $result = mysqli_query($dbConn, $sql);
+    $row = mysqli_fetch_assoc($result);
+    return $row["theme_name"];
+}
+
+function translateDifficulty($dif)
+{
+
+    if($dif == 1){
+        return "Lengvas";
+    }
+    elseif ($dif == 2){
+        return "Vidutiniškas";
+    }
+    elseif ($dif == 3){
+        return "Sudėtingas";
+    }
+    else{
+        return "NaN";
+    }
+}

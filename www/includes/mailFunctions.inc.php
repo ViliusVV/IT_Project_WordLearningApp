@@ -16,14 +16,19 @@ function send_mail($sendTo, $mailContents)
     $mail->password = 'BigBang0258';
 
     // Send to
-    $mail->addTo('viliuxxs123@gmail.com');
+    $mail->addTo($sendTo);
 
     // Mail title
-    $mail->Subject('PHP mail');
+    $mail->Subject('Žodžių mokymosi aplinka, suvestinė');
 
     // Mail contents
     $mail->Body($mailContents);
 
     return $mail->Send();
+}
+
+if(isset($_POST['content']))
+{
+    send_mail($_POST["email"], $_POST["content"]);
 }
 
