@@ -5,7 +5,7 @@
 $role = GetRole();
 $lang = $_GET["lang"];
 
-if($role == "Mokinys")
+if($role == "Mokinys" or $role == "Moderatorius")
 {
 //    $data = json_decode(file_get_contents("php://input"));
 
