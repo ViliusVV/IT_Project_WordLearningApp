@@ -49,7 +49,13 @@ if($lang == "private")
 //$randsql = $randsql.' AND  (stat.unlearned=0 OR stat.word_id IS NULL)';
 $countGuessed = $countGuessed.' AND stat.unlearned=1  ';
 
-$randsql = $randsql." ORDER BY wrong_count DESC LIMIT 20";
+if(isset($_GET["sortby"])){
+    $randsql = $randsql." ORDER BY ".$_GET['sortby']." LIMIT 20";
+}
+else{
+    $randsql = $randsql." ORDER BY wrong_count DESC LIMIT 20";
+}
+
 $result = mysqli_query($dbConn, $randsql);
 
 if($result == false) {
@@ -125,11 +131,10 @@ if($round != 1)
                 <caption>Monthly savings</caption>
                 <tr class="row100 head">
                     <th class="cell100 w-15 p-l-40">ID</th>
-                    <th class="cell100 w-20 ">Žodis</th>
-                    <th class="cell100 w-20">Vertimas</th>
+                    <?php echo '<th class="cell100 w-20"><a href="report.php?lang='.$lang.'&theme='.$theme.'&difficulty='.$diff.'&sortby=word_from" class="unstyled-button" a>Žodis</a></a></th>' ?>
+                    <?php echo '<th class="cell100 w-20"><a href="report.php?lang='.$lang.'&theme='.$theme.'&difficulty='.$diff.'&sortby=word_to" class="unstyled-button" a>Vertimas</a></a></th>' ?>
                     <th class="cell100 w-15 ">Klaidų skaičius</th>
                     <th class="cell100 w-15 ">Iš viso spėtą kartų</th>
-                    <th class="cell100 w-15 ">Neteisingai/teisingai santykis</th>
                 </tr>
                 </thead>
             </table>
@@ -159,14 +164,13 @@ if($round != 1)
 
 <script>
     let email = "<?php echo $_SESSION["email"]; ?>";
-    let content = 'some random content here';
+    let content = "<?php echo 'Pabaigta žodyno:'.$perc; ?>%";
     $(document).ready(function () {
         $('.send').click(function () {
             console.log(email);
             data = new FormData()
             data.set('email',email)
             data.set('content', content)
-
             let request = new XMLHttpRequest();
             request.open("POST", 'includes/mailFunctions.inc.php', false);
             request.send(data)
