@@ -198,3 +198,4 @@ AH00558: apache2: Could not reliably determine the server's fully qualified doma
 Cannot load Xdebug - it was already loaded
 [Sun Jan 05 21:03:32.701840 2020] [mpm_prefork:notice] [pid 1] AH00163: Apache/2.4.25 (Debian) PHP/7.3.11 configured -- resuming normal operations
 [Sun Jan 05 21:03:32.702263 2020] [core:notice] [pid 1] AH00094: Command line: 'apache2 -D FOREGROUND'
+[Mon Jan 06 12:44:53.108037 2020] [mpm_prefork:notice] [pid 1] AH00170: caught SIGWINCH, shutting down gracefully

@@ -18,7 +18,7 @@ $row = mysqli_fetch_assoc($result);
 ?>
 
     <div class="word card bg-dark card-dark">
-        <form action="wordedit.php?lang=<?php echo $lang.'&word_id='.$_GET["word_id"]; ?>" method="POST">
+        <form action="wordedit.php?lang=<?php echo $lang.'&word_id='.$_GET['word_id']; ?>" method="POST">
             <h4 class="word card-header bg-info">
                 <span style="color: white">
                     Redaguoti žodį<br>
